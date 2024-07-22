@@ -514,7 +514,7 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Page 1</a></li>
-          <li class="breadcrumb-item">Page 2</li>
+          <li class="breadcrumb-item"><a href="index.html">Page 2</a></li>
           <li class="breadcrumb-item active">Default</li>
         </ol>
       </nav>
@@ -572,11 +572,29 @@
                   <div class="col-md-2">
                     <input type="text" class="form-control" placeholder="검색어">
                   </div>
+                  <div class="col-md-2">
+                    <button></button>
+                    <button></button>
+                  </div>
                 </div>
               </form>
 
+              <div class="row mb-3">
+                <div class="copl-md-2">
+                  <a>Total : 171</a>
+                </div>
+                <div class="col-md-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>검색구분</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
               <!-- Table with stripped rows -->
-              <table class="table datatable">
+              <!-- Default Table -->
+              <table class="table">
                 <thead>
                   <tr>
                     <th>
@@ -824,6 +842,29 @@
               </table>
               <!-- End Table with stripped rows -->
 
+              <!--pagination start-->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!--pagination end-->
+              <div>
+                <button><a>???</a></button>
+                <button><a href="./0_form.html">form페이지로 이동</a></button>
+              </div>
             </div>
           </div>
 
