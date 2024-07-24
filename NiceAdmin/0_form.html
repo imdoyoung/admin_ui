@@ -537,94 +537,201 @@
                       <option>...</option>
                     </select>
                     <div class="invalid-feedback">
-                      Please select a valid state.
+                      코드 그룹을 선택해주세요.
                     </div>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-3">
                     <label for="validationCustom01" class="form-label">코드<a style="color: red;">*</a></label>
-                    <input type="text" class="form-control" id="validationCustom01" value="John" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="자동생성" style="background-color: lightgray;" required readonly>
                   </div>
                   <div class="col-md-3">
                     <label for="validationCustom01" class="form-label">코드 (ANOTHER)</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="John" required>
-                    <div class="valid-feedback">
-                      Looks good!
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="영대소문자,숫자" required>
+                    <div class="invalid-feedback">
+                      코드를 입력해주세요.
                     </div>
                   </div>
                   <div class="col-md-3">
                     <label for="validationCustom01" class="form-label">코드 이름<a style="color: red;">*</a></label>
-                    <input type="text" class="form-control" id="validationCustom01" value="John" required>
-                    <div class="valid-feedback">
-                      Looks good!
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="한글,영대소문자,숫자" required>
+                    <div class="invalid-feedback">
+                      코드 이름을 입력해주세요.
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <label for="validationCustom01" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="John" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationCustom02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="Doe" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationCustomUsername" class="form-label">Username</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <label for="validationCustom01" class="form-label">코드 이름 (영문)</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="영대소문자,숫자" required>
                     <div class="invalid-feedback">
-                      Please choose a username.
+                      코드 이름 (영문)을 입력해주세요.
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">City</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">State</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="validationCustom05" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="validationCustom01" class="form-label">사용 여부<a style="color: red;">*</a></label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">사용</option>
+                      <option>미사용</option>
+                    </select>
                     <div class="invalid-feedback">
-                      You must agree before submitting.
+                      사용 여부를 선택해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">순서<a style="color: red;">*</a></label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      순서를 입력해주세요.
                     </div>
                   </div>
                 </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="validationCustomUsername" class="form-label">설명</label>
+                    <textarea class="form-control" style="height: 100px"id="validationCustom02" required></textarea>
+                    <div class="invalid-feedback">
+                      설명을 입력해주세요.
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어1</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어2</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어3</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어4</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어5</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어6</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어7</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">다국어8</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비1 (VARCHAR TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비2 (VARCHAR TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비3 (VARCHAR TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비4 (VARCHAR TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비1 (INT TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비2 (INT TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비3 (INT TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom02" class="form-label">예비4 (INT TYPE)</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      입력해주세요.
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-1">
+                    <button type="button" class="btn btn-outline-dark">
+                      <a href="./0_list.html">
+                        <i class="bi bi-list-ul"></i>
+                      </a>
+                    </button>
+                  </div>
+                  <div class="col-md-10"></div>
+                  <div class="col-md-1" align="Right">
+                    <button type="submit" class="btn btn-primary">
+                      <a>
+                        <i class="bi bi-server"></i>
+                      </a>
+                    </button>
+                  </div>
                 </div>
               </form><!-- End Custom Styled Validation -->
 
